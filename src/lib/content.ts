@@ -51,7 +51,7 @@ export const PROJECTS: Project[] = [
   },
   {
     slug: 'Twiscaper',
-    title: 'Twiscaper',
+    title: 'Twitter Scraper',
     period: 'June 2026 - July 2026',
     description: [
       'A powerful yet simple command-line tool to scrape comments, replies, and search results from Twitter/X posts using Python and uv'
