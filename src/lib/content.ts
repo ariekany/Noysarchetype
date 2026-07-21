@@ -26,6 +26,18 @@ export interface Post {
 
 export const PROJECTS: Project[] = [
   {
+    slug: 'parthenon-explorer',
+    title: 'Parthenon WebAR & 3D Interactive Hub',
+    period: 'May 2026 - Jun 2026',
+    description: [
+      'Aplikasi web interaktif berbasis React, Vite, dan Tailwind CSS untuk mengeksplorasi situs sejarah kuil Parthenon di Athena.',
+      'Dilengkapi dengan simulasi rekonstruksi 3D interaktif dan teknologi WebAR (Augmented Reality) menggunakan pustaka A-Frame dan AR.js.',
+      'Menyediakan perbandingan kuil Parthenon dalam masa kejayaannya (rekonstruksi utuh) maupun penampakan reruntuhan aslinya saat ini, serta hotspot interaktif model 3D.'
+    ],
+    tags: ['React', 'WebAR', 'A-Frame', 'AR.js', 'Tailwind CSS', 'Sketchfab'],
+    link: 'https://parthenon-explorer-9fib4cfpg-kanoys-projects.vercel.app/'
+  },
+  {
     slug: 'heist-catcher',
     title: 'Heist Catcher',
     period: 'Apr 2026 - May 2026',
@@ -74,6 +86,13 @@ export const EXPERIENCE: Experience[] = [
 ];
 
 export const POSTS: Post[] = [
+  {
+    slug: 'parthenon-webar-hub',
+    title: 'Eksplorasi Parthenon: Menyatukan Sejarah, Model 3D, dan WebAR',
+    date: '2026-06-15',
+    description: 'Membangun aplikasi edukasi interaktif kuil Parthenon menggunakan React, Vite, Tailwind CSS, A-Frame, AR.js, dan Sketchfab.',
+    tags: ['React', 'WebAR', 'A-Frame', 'AR.js']
+  },
   {
     slug: 'arsitektur-sistem-forensik',
     title: 'Membangun Arsitektur Sistem Forensik Blockchain dengan Rust',

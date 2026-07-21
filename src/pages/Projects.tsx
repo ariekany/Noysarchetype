@@ -64,7 +64,19 @@ export default function Projects() {
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 border-2 border-current px-4 py-2 font-black uppercase text-xs hover:bg-current hover:text-inherit transition-all"
                 >
+<<<<<<< HEAD
                   <Github className="h-4 w-4" /> Source
+=======
+                  {project.link?.includes('github.com') ? (
+                    <>
+                      <Github className="h-4 w-4" /> Source
+                    </>
+                  ) : (
+                    <>
+                      <ExternalLink className="h-4 w-4" /> Live Demo
+                    </>
+                  )}
+>>>>>>> 431fc44 (adding a new project and a blog)
                 </a>
               </div>
             </div>
