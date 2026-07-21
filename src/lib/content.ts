@@ -26,7 +26,7 @@ export interface Post {
 
 export const PROJECTS: Project[] = [
   {
-    slug: 'parthenon-explorer',
+    slug: 'Paarthenon-explorer',
     title: 'Parthenon WebAR & 3D Interactive Hub',
     period: 'May 2026 - Jun 2026',
     description: [
@@ -47,7 +47,17 @@ export const PROJECTS: Project[] = [
       'Applied Benford\'s Law for the statistical validation of on-chain data, effectively reducing false positives in suspicious activity identification by up to 30%.'
     ],
     tags: ['Rust', 'Python', 'Blockchain', 'Forensics', 'Data Science'],
-    link: 'https://github.com/ariekany'
+    link: 'https://github.com/ariekany/HeistCatcher'
+  },
+  {
+    slug: 'Twiscaper',
+    title: 'Twiscaper',
+    period: 'June 2026 - July 2026',
+    description: [
+      'A powerful yet simple command-line tool to scrape comments, replies, and search results from Twitter/X posts using Python and uv'
+    ],
+    tags: ['Rust', 'Python', 'Social-Media', 'Data Scraping', 'Data Science'],
+    link: 'https://github.com/ariekany/Twiscaper'
   }
 ];
 
