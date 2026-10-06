@@ -92,7 +92,7 @@ export const PROJECTS: Project[] = [
   },
   {
     slug: 'fatf-40-recommendations',
-    title: 'FATF 40 Recommendations Explorer',
+    title: 'FATF 40 Recommendations',
     period: '2026',
     description: [
       'Bilingual FATF standards reference and AML/CFT learning platform combining practical guidance, operational scenarios, and global case studies.'
