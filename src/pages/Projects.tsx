@@ -39,7 +39,7 @@ export default function Projects() {
                   <span>{project.period}</span>
                 </div>
                 <h2 className="text-3xl font-black uppercase leading-[0.9] text-inherit transition-colors">
-                  {project.title}
+                  <ScrambleText text={project.title} />
                 </h2>
               </div>
 
@@ -53,27 +53,21 @@ export default function Projects() {
 
               <div className="space-y-4 text-sm leading-relaxed font-medium text-inherit/80 group-hover:text-inherit transition-colors">
                 {project.description.map((line, i) => (
-                  <p key={i}>{line}</p>
+                  <p key={i}><ScrambleText text={line} /></p>
                 ))}
               </div>
 
-              <div className="mt-auto pt-8 flex gap-4">
-                <a 
-                  href={project.link} 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 border-2 border-current px-4 py-2 font-black uppercase text-xs hover:bg-current hover:text-inherit transition-all"
-                >
-                  {project.link?.includes('github.com') ? (
-                    <>
-                      <Github className="h-4 w-4" /> Source
-                    </>
-                  ) : (
-                    <>
-                      <ExternalLink className="h-4 w-4" /> Live Demo
-                    </>
-                  )}
-                </a>
+              <div className="mt-auto pt-8 flex flex-wrap gap-4">
+                {project.link && (
+                  <a href={project.link} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 border-2 border-current px-4 py-2 font-black uppercase text-xs hover:bg-current hover:text-inherit transition-all">
+                    <Github className="h-4 w-4" /> <ScrambleText text="Source" />
+                  </a>
+                )}
+                {project.demoLink && (
+                  <a href={project.demoLink} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 border-2 border-current px-4 py-2 font-black uppercase text-xs hover:bg-current hover:text-inherit transition-all">
+                    <ExternalLink className="h-4 w-4" /> <ScrambleText text="Live Demo" />
+                  </a>
+                )}
               </div>
             </div>
           </div>

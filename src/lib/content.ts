@@ -5,6 +5,7 @@ export interface Project {
   description: string[];
   tags: string[];
   link?: string;
+  demoLink?: string;
 }
 
 export interface Experience {
@@ -88,6 +89,19 @@ export const PROJECTS: Project[] = [
     ],
     tags: ['Rust', 'Python', 'Social-Media', 'Data Scraping', 'Data Science'],
     link: 'https://github.com/ariekany/Twiscaper'
+  },
+  {
+    slug: 'fatf-40-recommendations',
+    title: 'FATF 40 Recommendations Explorer',
+    period: '2026',
+    description: [
+      'An interactive, bilingual English and Bahasa Indonesia reference and study platform covering the FATF International Standards on combating money laundering and the financing of terrorism and proliferation.',
+      'Designed for newcomers, AML/CFT practitioners, auditors, regulators, and law enforcement officers.',
+      'Connects regulatory standards with practical illustrations, operational scenarios, and real-world global enforcement case studies.'
+    ],
+    tags: ['React', 'TypeScript', 'AML/CFT', 'FATF', 'Compliance', 'Interactive Learning'],
+    link: 'https://github.com/ariekany/fatf_40recommendation',
+    demoLink: 'https://fatf-40recommendation-5jel4ewg6-kanoys-projects.vercel.app/'
   }
 ];
 
