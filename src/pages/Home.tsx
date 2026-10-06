@@ -34,7 +34,7 @@ export default function Home() {
             className="text-sm leading-relaxed text-slate-600 dark:text-slate-400 block"
             revealSpeed={3}
           />
-          <div className="flex flex-wrap gap-2 mt-6" aria-label="Social links">
+          <div className="flex flex-col items-start gap-2 mt-6" aria-label="Social links">
             {[
               { label: 'LinkedIn', href: 'https://www.linkedin.com/in/ariekany/', Icon: Linkedin },
               { label: 'GitHub', href: 'https://github.com/ariekany', Icon: Github },
