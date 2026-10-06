@@ -95,9 +95,8 @@ export const PROJECTS: Project[] = [
     title: 'FATF 40 Recommendations Explorer',
     period: '2026',
     description: [
-      'An interactive, bilingual English and Bahasa Indonesia reference and study platform covering the FATF International Standards on combating money laundering and the financing of terrorism and proliferation.',
-      'Designed for newcomers, AML/CFT practitioners, auditors, regulators, and law enforcement officers.',
-      'Connects regulatory standards with practical illustrations, operational scenarios, and real-world global enforcement case studies.'
+      'Bilingual FATF standards reference and AML/CFT learning platform.',
+      'Combines practical guidance, operational scenarios, and global case studies.'
     ],
     tags: ['React', 'TypeScript', 'AML/CFT', 'FATF', 'Compliance', 'Interactive Learning'],
     link: 'https://github.com/ariekany/fatf_40recommendation',
