@@ -2,7 +2,7 @@ import { motion } from 'motion/react';
 import SEO from '@/src/components/SEO';
 import ScrambleText from '@/src/components/ScrambleText';
 import { EXPERIENCE, PROJECTS, TECHNICAL_HIGHLIGHTS, TECHNICAL_PROFILE } from '@/src/lib/content';
-import { Shield, Cpu, Binary, ArrowRight } from 'lucide-react';
+import { Shield, Cpu, Binary, ArrowRight, Linkedin, Github, Twitter, Mail } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export default function Home() {
@@ -34,6 +34,25 @@ export default function Home() {
             className="text-sm leading-relaxed text-slate-600 dark:text-slate-400 block"
             revealSpeed={3}
           />
+          <div className="flex flex-wrap gap-2 mt-6" aria-label="Social links">
+            {[
+              { label: 'LinkedIn', href: 'https://www.linkedin.com/in/ariekany/', Icon: Linkedin },
+              { label: 'GitHub', href: 'https://github.com/ariekany', Icon: Github },
+              { label: 'X', href: 'https://x.com/ariekany', Icon: Twitter },
+              { label: 'Gmail', href: 'mailto:ariekany@gmail.com', Icon: Mail }
+            ].map(({ label, href, Icon }) => (
+              <a
+                key={label}
+                href={href}
+                target={href.startsWith('mailto:') ? undefined : '_blank'}
+                rel={href.startsWith('mailto:') ? undefined : 'noopener noreferrer'}
+                className="flex items-center gap-2 border-2 border-slate-900 px-3 py-2 text-[10px] font-black uppercase tracking-widest text-slate-900 transition-colors hover:bg-slate-900 hover:text-white dark:border-white dark:text-white dark:hover:bg-white dark:hover:text-navy-950"
+              >
+                <Icon className="h-3 w-3" />
+                <ScrambleText text={label} />
+              </a>
+            ))}
+          </div>
         </div>
 
         <div className="mt-auto pt-8 border-t border-slate-100 dark:border-navy-900">
