@@ -1,7 +1,7 @@
 import { motion } from 'motion/react';
 import SEO from '@/src/components/SEO';
 import ScrambleText from '@/src/components/ScrambleText';
-import { PROJECTS } from '@/src/lib/content';
+import { ADDITIONAL_PROJECTS, PROJECTS } from '@/src/lib/content';
 import { Github, ExternalLink, Terminal } from 'lucide-react';
 
 export default function Projects() {
@@ -27,7 +27,7 @@ export default function Projects() {
       </section>
 
       <div className="grid gap-12 sm:grid-cols-2">
-        {PROJECTS.map((project, i) => (
+        {[...PROJECTS, ...ADDITIONAL_PROJECTS].map((project, i) => (
           <div 
             key={project.slug}
             className="group relative border-4 border-slate-900 bg-white p-10 transition-[background-color,color] duration-200 hover:bg-slate-950 hover:text-white dark:border-white dark:bg-navy-900 dark:text-white dark:hover:bg-white dark:hover:text-navy-950"

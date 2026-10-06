@@ -103,6 +103,19 @@ export const PROJECTS: Project[] = [
   }
 ];
 
+export const ADDITIONAL_PROJECTS: Project[] = [
+  {
+    slug: 'jawi-recognition',
+    title: 'Jawi Recognition',
+    period: '2026',
+    description: [
+      'Computer vision system translating Acehnese Jawi words with MobileNetV2 and cosine similarity.'
+    ],
+    tags: ['Computer Vision', 'Deep Learning', 'MobileNetV2', 'Python'],
+    link: 'https://github.com/ariekany/Harah-Jawo-Aceh.git'
+  }
+];
+
 export const EXPERIENCE: Experience[] = [
   {
     company: 'Binance',
