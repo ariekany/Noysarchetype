@@ -1,7 +1,7 @@
 import { motion } from 'motion/react';
 import SEO from '@/src/components/SEO';
 import ScrambleText from '@/src/components/ScrambleText';
-import { EXPERIENCE, PROJECTS } from '@/src/lib/content';
+import { EXPERIENCE, PROJECTS, TECHNICAL_HIGHLIGHTS, TECHNICAL_PROFILE } from '@/src/lib/content';
 import { Shield, Cpu, Binary, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -86,6 +86,32 @@ export default function Home() {
                 </div>
               </Link>
             ))}
+          </div>
+        </div>
+
+        {/* Technical profile */}
+        <div className="p-10 border-b-2 border-slate-900 bg-white dark:bg-navy-950 dark:border-white transition-colors duration-300">
+          <div className="flex justify-between items-end mb-8">
+            <h2 className="text-xl font-black uppercase tracking-tighter text-slate-900 dark:text-white">Technical Profile</h2>
+            <span className="text-xs font-mono text-slate-400">// FOCUS AREAS</span>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {TECHNICAL_PROFILE.map((group) => (
+              <div key={group.label} className="border-2 border-slate-900 p-5 dark:border-white">
+                <h3 className="text-xs font-black uppercase tracking-widest mb-4 text-slate-900 dark:text-white">{group.label}</h3>
+                <div className="flex flex-wrap gap-2">
+                  {group.items.map((item) => <span key={item} className="text-xs font-mono border border-slate-300 px-2 py-1 dark:border-slate-600 dark:text-slate-300">{item}</span>)}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Technical highlights */}
+        <div className="p-10 border-b-2 border-slate-900 bg-slate-50 dark:bg-navy-950 dark:border-white transition-colors duration-300">
+          <h2 className="text-xl font-black uppercase tracking-tighter mb-6 text-slate-900 dark:text-white">Technical Highlights</h2>
+          <div className="space-y-3">
+            {TECHNICAL_HIGHLIGHTS.map((highlight) => <p key={highlight} className="border-l-4 border-slate-900 pl-4 text-sm font-medium text-slate-700 dark:border-white dark:text-slate-300">{highlight}</p>)}
           </div>
         </div>
 

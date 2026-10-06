@@ -24,6 +24,36 @@ export interface Post {
   content?: string;
 }
 
+export interface TechnicalProfile {
+  label: string;
+  items: string[];
+}
+
+export const TECHNICAL_PROFILE: TechnicalProfile[] = [
+  {
+    label: 'Security & Systems',
+    items: ['Web security', 'Linux operations', 'Rust', 'Python']
+  },
+  {
+    label: 'Blockchain',
+    items: ['Smart contracts', 'Blockchain security engineering', 'Market analytics', 'Fundamental research']
+  },
+  {
+    label: 'Education',
+    items: ['Information Technology', 'GPA 3.6 / 4.0', 'Islamic State University of Ar-Raniry']
+  },
+  {
+    label: 'Technical Credentials',
+    items: ['Belajar Dasar AI — Dicoding', 'Belajar Dasar Manajemen Proyek — Dicoding', 'AI Introductory Series — Telkom AI Center of Excellence']
+  }
+];
+
+export const TECHNICAL_HIGHLIGHTS = [
+  '2nd place, Web3 University Tour Aceh — Binance Academy × Tokocrypto × Coinvestasi',
+  'Website security assessment and performance tuning for the UINAR Journal Web System',
+  'Blockchain Technology, Business Intelligence, and Linux Systems laboratory instruction'
+];
+
 export const PROJECTS: Project[] = [
   {
     slug: 'Paarthenon-explorer',
