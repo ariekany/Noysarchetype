@@ -95,8 +95,7 @@ export const PROJECTS: Project[] = [
     title: 'FATF 40 Recommendations Explorer',
     period: '2026',
     description: [
-      'Bilingual FATF standards reference and AML/CFT learning platform.',
-      'Combines practical guidance, operational scenarios, and global case studies.'
+      'Bilingual FATF standards reference and AML/CFT learning platform combining practical guidance, operational scenarios, and global case studies.'
     ],
     tags: ['React', 'TypeScript', 'AML/CFT', 'FATF', 'Compliance', 'Interactive Learning'],
     link: 'https://github.com/ariekany/fatf_40recommendation',
