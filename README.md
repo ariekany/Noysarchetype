@@ -19,17 +19,3 @@ Personal portfolio of **Muhammad Arief Furqany**, focused on blockchain security
 ## Technology
 
 React · TypeScript · Vite · Tailwind CSS · Rust · Python · Web3 · Blockchain Forensics · Linux
-
-## Local Development
-
-```bash
-npm install
-npm run dev
-```
-
-Production verification:
-
-```bash
-npm run lint
-npm run build
-```
