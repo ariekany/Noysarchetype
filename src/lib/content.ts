@@ -149,6 +149,26 @@ export const EXPERIENCE: Experience[] = [
       'Executed comprehensive website vulnerability assessments and performance tuning for the UINAR Journal Web System.',
       'Identified and mitigated major security flaws, achieving a 30% measurable improvement in overall web security.'
     ]
+  },
+  {
+    company: 'HIMA-TI',
+    role: 'Academic Mediator',
+    period: '2025',
+    location: 'Banda Aceh',
+    highlights: [
+      'Supported academic communication between students, faculty, and external partners.',
+      'Helped connect campus technology initiatives with local collaboration opportunities.'
+    ]
+  },
+  {
+    company: 'NVIDIA Tech Forward 2025',
+    role: 'Committee Chair',
+    period: '2025',
+    location: 'Banda Aceh',
+    highlights: [
+      'Led the event committee and coordinated campus-industry collaboration.',
+      'Supported an event focused on AI, GPU technology, and digital opportunities.'
+    ]
   }
 ];
 
