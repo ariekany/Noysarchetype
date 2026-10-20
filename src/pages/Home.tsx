@@ -148,7 +148,7 @@ export default function Home() {
             <div key={i} className="bg-white border-2 border-slate-900 p-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-4 group hover:bg-slate-900 hover:text-white dark:bg-navy-950 dark:border-white dark:hover:bg-white dark:hover:text-navy-950 transition-[background-color,color] duration-200">
               <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-6">
                 <span className="text-xs font-mono text-slate-400 border border-slate-200 px-2 flex items-center h-6 dark:border-navy-800 transition-colors group-hover:border-slate-800 dark:group-hover:border-slate-200">
-                  <ScrambleText text={exp.period.split(' - ')[0]} />
+                  <ScrambleText text={exp.period.match(/\d{4}/)?.[0] ?? exp.period} />
                 </span>
                 <div>
                   <span className="font-black uppercase text-sm text-slate-900 dark:text-white group-hover:text-white dark:group-hover:text-navy-950 transition-colors">
