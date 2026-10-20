@@ -27,34 +27,6 @@ export default function Blog() {
         />
       </section>
 
-      <section className="space-y-6">
-        <div>
-          <h2 className="text-3xl font-black uppercase tracking-tighter text-slate-900 dark:text-white">Community & Organization</h2>
-          <ScrambleText
-            text="Selected volunteering and organizational experiences."
-            className="mt-2 text-slate-500 dark:text-slate-400 block"
-            revealSpeed={1.2}
-          />
-        </div>
-        <div className="grid gap-4 md:grid-cols-3">
-          <article className="border-2 border-slate-900 bg-white p-6 dark:bg-navy-900 dark:border-white">
-            <p className="text-[10px] font-mono font-black uppercase tracking-widest text-slate-500 dark:text-slate-400">Community</p>
-            <h3 className="mt-3 text-xl font-black uppercase">Binance Angel</h3>
-            <p className="mt-2 text-sm text-slate-600 dark:text-slate-300">Supporting local users through Web3 education and community activities.</p>
-          </article>
-          <article className="border-2 border-slate-900 bg-white p-6 dark:bg-navy-900 dark:border-white">
-            <p className="text-[10px] font-mono font-black uppercase tracking-widest text-slate-500 dark:text-slate-400">Organization</p>
-            <h3 className="mt-3 text-xl font-black uppercase">HIMA-TI</h3>
-            <p className="mt-2 text-sm text-slate-600 dark:text-slate-300">Serving as an academic mediator and helping build campus technology initiatives.</p>
-          </article>
-          <article className="border-2 border-slate-900 bg-white p-6 dark:bg-navy-900 dark:border-white">
-            <p className="text-[10px] font-mono font-black uppercase tracking-widest text-slate-500 dark:text-slate-400">Volunteer Leadership</p>
-            <h3 className="mt-3 text-xl font-black uppercase">Event Committee Chair</h3>
-            <p className="mt-2 text-sm text-slate-600 dark:text-slate-300">Leading the NVIDIA Tech Forward 2025 committee and coordinating campus-industry collaboration.</p>
-          </article>
-        </div>
-      </section>
-
       <div className="flex flex-col gap-4">
         {POSTS.map((post) => (
           <Link 
