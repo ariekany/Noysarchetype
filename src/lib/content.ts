@@ -22,6 +22,7 @@ export interface Post {
   date: string;
   description: string;
   tags: string[];
+  sourceUrl?: string;
   content?: string;
 }
 
@@ -153,17 +154,56 @@ export const EXPERIENCE: Experience[] = [
 export const POSTS: Post[] = [
   {
     slug: 'parthenon-webar-hub',
-    title: 'Eksplorasi Parthenon: Menyatukan Sejarah, Model 3D, dan WebAR',
+    title: 'Eksplorasi Parthenon',
     date: '2026-06-15',
     description: 'Membangun aplikasi edukasi interaktif kuil Parthenon menggunakan React, Vite, Tailwind CSS, A-Frame, AR.js, dan Sketchfab.',
     tags: ['React', 'WebAR', 'A-Frame', 'AR.js']
   },
   {
     slug: 'arsitektur-sistem-forensik',
-    title: 'Membangun Arsitektur Sistem Forensik Blockchain dengan Rust',
+    title: 'Arsitektur Forensik Blockchain',
     date: '2026-05-10',
-    description: 'Membongkar Pola Pencucian Uang Digital dengan Kecepatan Rust dan Fleksibilitas Python.',
+    description: 'Membongkar pola pencucian uang digital dengan kecepatan Rust dan fleksibilitas Python.',
     tags: ['Rust', 'Python', 'Blockchain', 'Security']
   },
-  
+  {
+    slug: 'web3-university-tour-2025',
+    title: 'Web3 University Tour',
+    date: '2025-12-01',
+    description: 'Your Web3 education work featured in Coinvestasi after reaching students across eight Indonesian cities.',
+    tags: ['Web3', 'Education', 'Blockchain'],
+    sourceUrl: 'https://coinvestasi.com/berita/web3-university-tour-2025-edukasi-mahasiswa-di-delapan-kota-indonesia'
+  },
+  {
+    slug: 'banda-aceh-government-audiensi',
+    title: 'Banda Aceh Audiensi',
+    date: '2025-05-01',
+    description: 'Academic and student collaboration with the Banda Aceh Government through HIMA-TI and the Faculty of Science and Technology.',
+    tags: ['Technology', 'Community', 'Leadership'],
+    sourceUrl: 'https://fst.ar-raniry.ac.id/2025/05/civitas-akademika-fakultas-sains-dan-teknologi-bersama-hima-ti-lakukan-audiensi-dengan-pemerintah-kota-banda-aceh/'
+  },
+  {
+    slug: 'web3-university-tour-aceh',
+    title: 'Web3 Tour Aceh',
+    date: '2025-01-01',
+    description: 'Second-place achievement in the Aceh Web3 University Tour, promoting blockchain literacy with Tokocrypto and Binance Academy.',
+    tags: ['Achievement', 'Web3', 'Blockchain'],
+    sourceUrl: 'https://coinvestasi.com/berita/web3-university-tour-aceh'
+  },
+  {
+    slug: 'nvidia-tech-forward-2025',
+    title: 'NVIDIA Tech Forward',
+    date: '2025-01-01',
+    description: 'Chaired the committee for a campus-industry event focused on Banda Aceh\'s digital transformation.',
+    tags: ['Leadership', 'Technology', 'Event'],
+    sourceUrl: 'https://fst.uin.ar-raniry.ac.id/informasi-berita/nvidia_tech_forward_2025:_wujud_kolaborasi_kampus_dan_industri_menuju_transformasi_digital_banda_aceh'
+  },
+  {
+    slug: 'hana-meuhoe-tamoeng',
+    title: 'Hana Meuhoe Tamoeng',
+    date: '2026-04-13',
+    description: 'An article discussing the challenges of centralized education in Aceh.',
+    tags: ['Education', 'Aceh', 'Opinion'],
+    sourceUrl: 'https://sumberpost.com/2026/04/13/hana-meuhoe-tamoeng-sisi-gelap-sentralisasi-pendidikan-di-aceh/'
+  }
 ];

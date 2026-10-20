@@ -3,7 +3,7 @@ import SEO from '@/src/components/SEO';
 import ScrambleText from '@/src/components/ScrambleText';
 import { POSTS } from '@/src/lib/content';
 import { Link } from 'react-router-dom';
-import { Calendar, Tag, ChevronRight } from 'lucide-react';
+import { Calendar, Tag, ChevronRight, ExternalLink } from 'lucide-react';
 
 export default function Blog() {
   return (
@@ -43,12 +43,24 @@ export default function Blog() {
               </h2>
             </div>
 
-            <div className="flex flex-wrap gap-2 text-slate-500 dark:text-zinc-400 group-hover:text-inherit">
-               {post.tags.slice(0, 1).map(tag => (
+            <div className="flex flex-wrap items-center gap-2 text-slate-500 dark:text-zinc-400 group-hover:text-inherit">
+              {post.tags.slice(0, 1).map(tag => (
                 <span key={tag} className="text-[10px] font-black uppercase px-2 py-0.5 border border-current">
                   {tag}
                 </span>
               ))}
+              {post.sourceUrl && (
+                <a
+                  href={post.sourceUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label={`Read original article: ${post.title}`}
+                  className="inline-flex items-center gap-1 border-2 border-current px-2 py-1 text-[10px] font-black uppercase hover:bg-current hover:text-white dark:hover:text-navy-950"
+                  onClick={(event) => event.stopPropagation()}
+                >
+                  Original <ExternalLink className="h-3 w-3" />
+                </a>
+              )}
               <ChevronRight className="h-5 w-5 text-slate-900 dark:text-white group-hover:text-inherit group-hover:translate-x-2 transition-all" />
             </div>
           </Link>
