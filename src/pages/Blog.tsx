@@ -38,9 +38,16 @@ export default function Blog() {
               <span className="text-xs font-mono font-black opacity-60 bg-slate-50 border-2 border-slate-900 px-3 py-1 group-hover:bg-slate-800 transition-colors dark:bg-zinc-800 dark:border-white dark:group-hover:bg-zinc-700">
                 {post.date.split('-').slice(1).join('/')}
               </span>
-              <h2 className="text-2xl font-black uppercase tracking-tight text-inherit">
-                {post.title}
-              </h2>
+              <div>
+                <h2 className="text-2xl font-black uppercase tracking-tight text-inherit">
+                  {post.title}
+                </h2>
+                {post.contribution && (
+                  <p className="mt-2 text-xs font-mono font-black uppercase tracking-wider text-slate-500 dark:text-zinc-400">
+                    — contribution: {post.contribution}
+                  </p>
+                )}
+              </div>
             </div>
 
             <div className="flex flex-wrap items-center gap-2 text-slate-500 dark:text-zinc-400 group-hover:text-inherit">
