@@ -176,7 +176,7 @@ export const POSTS: Post[] = [
   },
   {
     slug: 'banda-aceh-government-audiensi',
-    title: 'Banda Aceh Audiensi',
+    title: 'Audiensi dengan Wali Kota Banda Aceh',
     date: '2025-05-01',
     description: 'Academic and student collaboration with the Banda Aceh Government through HIMA-TI and the Faculty of Science and Technology.',
     tags: ['Technology', 'Community', 'Leadership'],
