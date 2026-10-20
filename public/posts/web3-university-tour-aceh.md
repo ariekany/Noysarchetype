@@ -3,5 +3,3 @@
 Binance Academy, Tokocrypto, dan Coinvestasi melanjutkan rangkaian edukasi nasional Web3 University Tour 2025 di Politeknik Aceh sebagai kota keenam. Acara ini mencatatkan rekor antusiasme tertinggi dengan 428 pendaftar dan 299 peserta hadir langsung, mengingat wilayah Aceh yang sebelumnya minim akses edukasi Web3 berskala nasional. Materi edukasi disajikan secara aplikatif dan disesuaikan dengan pendekatan syariah melalui fokus pada aspek teknis cara kerja jaringan, fungsi wallet, hingga praktik keamanan digital tanpa unsur spekulatif.
 
 Melalui paparan narasumber industri mengenai perkembangan aset digital, peluang karier, dan pengenalan ekosistem lokal, para mahasiswa tidak hanya dibekali pemahaman teknis dasar tetapi juga berkesempatan mengikuti kelas praktis serta kompetisi Cumlaude Web3. Pada sesi penutup, tiga peserta terbaik berhasil diraih oleh Sulthan Maulidan (Juara 1), Muhammad Arief Furqany (Juara 2), dan Abizhia Ul Jabbar (Juara 3), yang membawa mereka melaju ke tahap final nasional serta seleksi program Binance Academy Student Ambassador.
-
-[Read the original article](https://coinvestasi.com/berita/web3-university-tour-aceh)

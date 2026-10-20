@@ -4,7 +4,7 @@ import { motion } from 'motion/react';
 import ReactMarkdown from 'react-markdown';
 import SEO from '@/src/components/SEO';
 import { POSTS } from '@/src/lib/content';
-import { ArrowLeft, Calendar, Clock, Tag } from 'lucide-react';
+import { ArrowLeft, Calendar, Clock, ExternalLink } from 'lucide-react';
 import { codeToHtml } from 'shiki';
 
 export default function BlogPost() {
@@ -77,7 +77,23 @@ export default function BlogPost() {
               </span>
             ))}
           </div>
+          {post.contribution && (
+            <p className="border-l-4 border-slate-900 pl-4 font-mono text-xs font-black uppercase tracking-wider text-slate-500 dark:border-white dark:text-slate-400">
+              Contribution: <span className="text-slate-900 dark:text-white">{post.contribution}</span>
+            </p>
+          )}
         </header>
+
+        {post.sourceUrl && (
+          <a
+            href={post.sourceUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center gap-2 border-2 border-slate-900 px-4 py-2 font-mono text-xs font-black uppercase text-slate-900 transition-colors hover:bg-slate-900 hover:text-white dark:border-white dark:text-white dark:hover:bg-white dark:hover:text-navy-950"
+          >
+            Read the original article <ExternalLink className="h-4 w-4" />
+          </a>
+        )}
 
         <div className="prose">
           <ReactMarkdown

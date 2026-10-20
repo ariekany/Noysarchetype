@@ -23,6 +23,7 @@ export interface Post {
   description: string;
   tags: string[];
   sourceUrl?: string;
+  contribution?: string;
   content?: string;
 }
 
@@ -172,7 +173,8 @@ export const POSTS: Post[] = [
     date: '2025-12-01',
     description: 'Your Web3 education work featured in Coinvestasi after reaching students across eight Indonesian cities.',
     tags: ['Web3', 'Education', 'Blockchain'],
-    sourceUrl: 'https://coinvestasi.com/berita/web3-university-tour-2025-edukasi-mahasiswa-di-delapan-kota-indonesia'
+    sourceUrl: 'https://coinvestasi.com/berita/web3-university-tour-2025-edukasi-mahasiswa-di-delapan-kota-indonesia',
+    contribution: 'Featured quote contributor'
   },
   {
     slug: 'banda-aceh-government-audiensi',
@@ -180,7 +182,8 @@ export const POSTS: Post[] = [
     date: '2025-05-01',
     description: 'Academic and student collaboration with the Banda Aceh Government through HIMA-TI and the Faculty of Science and Technology.',
     tags: ['Technology', 'Community', 'Leadership'],
-    sourceUrl: 'https://fst.ar-raniry.ac.id/2025/05/civitas-akademika-fakultas-sains-dan-teknologi-bersama-hima-ti-lakukan-audiensi-dengan-pemerintah-kota-banda-aceh/'
+    sourceUrl: 'https://fst.ar-raniry.ac.id/2025/05/civitas-akademika-fakultas-sains-dan-teknologi-bersama-hima-ti-lakukan-audiensi-dengan-pemerintah-kota-banda-aceh/',
+    contribution: 'HIMA-TI academic mediator'
   },
   {
     slug: 'web3-university-tour-aceh',
@@ -188,7 +191,8 @@ export const POSTS: Post[] = [
     date: '2025-01-01',
     description: 'Second-place achievement in the Aceh Web3 University Tour, promoting blockchain literacy with Tokocrypto and Binance Academy.',
     tags: ['Achievement', 'Web3', 'Blockchain'],
-    sourceUrl: 'https://coinvestasi.com/berita/web3-university-tour-aceh'
+    sourceUrl: 'https://coinvestasi.com/berita/web3-university-tour-aceh',
+    contribution: 'Second-place winner'
   },
   {
     slug: 'nvidia-tech-forward-2025',
@@ -196,7 +200,8 @@ export const POSTS: Post[] = [
     date: '2025-01-01',
     description: 'Chaired the committee for a campus-industry event focused on Banda Aceh\'s digital transformation.',
     tags: ['Leadership', 'Technology', 'Event'],
-    sourceUrl: 'https://fst.uin.ar-raniry.ac.id/informasi-berita/nvidia_tech_forward_2025:_wujud_kolaborasi_kampus_dan_industri_menuju_transformasi_digital_banda_aceh'
+    sourceUrl: 'https://fst.uin.ar-raniry.ac.id/informasi-berita/nvidia_tech_forward_2025:_wujud_kolaborasi_kampus_dan_industri_menuju_transformasi_digital_banda_aceh',
+    contribution: 'Committee chair'
   },
   {
     slug: 'hana-meuhoe-tamoeng',
@@ -204,6 +209,7 @@ export const POSTS: Post[] = [
     date: '2026-04-13',
     description: 'An article discussing the challenges of centralized education in Aceh.',
     tags: ['Education', 'Aceh', 'Opinion'],
-    sourceUrl: 'https://sumberpost.com/2026/04/13/hana-meuhoe-tamoeng-sisi-gelap-sentralisasi-pendidikan-di-aceh/'
+    sourceUrl: 'https://sumberpost.com/2026/04/13/hana-meuhoe-tamoeng-sisi-gelap-sentralisasi-pendidikan-di-aceh/',
+    contribution: 'Article writer'
   }
 ];
