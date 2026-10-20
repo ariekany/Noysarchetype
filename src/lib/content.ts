@@ -63,9 +63,7 @@ export const PROJECTS: Project[] = [
     title: 'Parthenon WebAR & 3D Interactive Hub',
     period: 'May 2026 - Jun 2026',
     description: [
-      'Aplikasi web interaktif berbasis React, Vite, dan Tailwind CSS untuk mengeksplorasi situs sejarah kuil Parthenon di Athena.',
-      'Dilengkapi dengan simulasi rekonstruksi 3D interaktif dan teknologi WebAR (Augmented Reality) menggunakan pustaka A-Frame dan AR.js.',
-      'Menyediakan perbandingan kuil Parthenon dalam masa kejayaannya (rekonstruksi utuh) maupun penampakan reruntuhan aslinya saat ini, serta hotspot interaktif model 3D.'
+      'Interactive Parthenon learning experience combining React, WebAR, 3D reconstruction, A-Frame, AR.js, and Sketchfab.'
     ],
     tags: ['React', 'WebAR', 'A-Frame', 'AR.js', 'Tailwind CSS', 'Sketchfab'],
     link: 'https://parthenon-explorer-9fib4cfpg-kanoys-projects.vercel.app/'
@@ -75,9 +73,7 @@ export const PROJECTS: Project[] = [
     title: 'Heist Catcher',
     period: 'Apr 2026 - May 2026',
     description: [
-      'Engineered a hybrid Rust-Python blockchain forensics framework specifically designed for transaction anomaly detection, mainly in money laundering.',
-      'Implemented Depth-First Search (DFS) algorithms to efficiently map and track complex transaction flows across 10,000+ on-chain data points.',
-      'Applied Benford\'s Law for the statistical validation of on-chain data, effectively reducing false positives in suspicious activity identification by up to 30%.'
+      'Rust-Python blockchain forensics framework for transaction anomaly detection, graph analysis, and Benford\'s Law validation across 10,000+ on-chain data points.'
     ],
     tags: ['Rust', 'Python', 'Blockchain', 'Forensics', 'Data Science'],
     link: 'https://github.com/ariekany/HeistCatcher'
